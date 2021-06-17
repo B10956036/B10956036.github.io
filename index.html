@@ -1,178 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" prefix="og: https://ogp.me/ns#" lang="zh-tw">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIS快餐點餐價格表</title>
-    <style>
-        h1 {
-            font-size: 36px;
-            font-weight: bolder;
-            color: blue;
-            text-align: center;
-        }
-        
-        table {
-            margin: auto;
-        }
-        
-        #tableCaption {
-            border-style: dashed;
-            border-width: 1px;
-        }
-        
-        td {
-            border-style: dotted;
-            border-width: 1px;
-            padding: 10px;
-            color: green;
-        }
-        /* //答案 2D*/
-        
-        .content {
-            color: green;
-            font-family: Arial;
-            font-size: 18px;
-        }
-        
-        #tableTitle {
-            font-weight: bolder;
-            font-size: 18px;
-            color: purple;
-            text-align: center
-        }
-    </style>
-    <script>
-        document.write("<h1>MIS快餐點餐價格表</h1>")
-        document.write("<table>")
-        document.write("<tr>")
-        document.write("<td>")
-        document.write("<p></p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p id='tableTitle'>5號餐<br>8元</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p  id='tableTitle'>4號餐<br>11元</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p  id='tableTitle'>3號餐<br>14元</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p  id='tableTitle'>2號餐<br>17元</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p  id='tableTitle'>1號餐<br>20元</p>")
-        document.write("</td>")
-        document.write("</tr>")
-        document.write("<tr>")
-        document.write("<td>")
-        document.write("<p  id='tableTitle'>3</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>3*8=24</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>3*11=33</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>3*14=42</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>3*17=51</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>3*20=60</p>")
-        document.write("</td>")
-        document.write("</tr>")
-        document.write("<tr>")
-        document.write("<td>")
-        document.write("<p id='tableTitle'>4</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>4*8=32</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>4*11=44</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>4*14=56</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>4*17=68</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>4*20=80</p>")
-        document.write("</td>")
-        document.write("</tr>")
-        document.write("<tr>")
-        document.write("<td>")
-        document.write("<p id='tableTitle'>5</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>5*8=40</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>5*11=55</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>5*14=70</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>5*17=85</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>5*20=100</p>")
-        document.write("</td>")
-        document.write("</tr>")
-        document.write("<tr>")
-        document.write("<td>")
-        document.write("<p id='tableTitle'>6</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>6*8=48</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>6*11=66</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>6*14=84</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>6*17=102</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>6*20=120</p>")
-        document.write("</td>")
-        document.write("</tr>")
-        document.write("<tr>")
-        document.write("<td>")
-        document.write("<p id='tableTitle'>7</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>7*8=56</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>7*11=77</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>7*14=98</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>7*17=119</p>")
-        document.write("</td>")
-        document.write("<td>")
-        document.write("<p class='content'>7*20=140</p>")
-        document.write("</td>")
-        document.write("</tr>")
-        document.write("</table>")
-    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>期末個人專題</title>
+    <link href="https://d1di2lzuh97fh2.cloudfront.net/files/1s/1sq/1sqe1h.css?ph=8283c009c2" rel="stylesheet">
+    <link rel="stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/3v/3vw/3vwpuf.css?ph=8283c009c2" data-wnd_color_scheme_file="">
+    <link rel="stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/3r/3rm/3rm9il.css?ph=8283c009c2" data-wnd_additive_color_file="">
 </head>
 
-<body>
+<body class="l layout eshop-hide short-content wt-home ac-i ac-n l-default l-d-none b-btn-r b-btn-s-l b-btn-dbb b-btn-bw-2 img-d-r img-t-u img-h-o line-solid b-e-ds lbox-d c-s-s hn-tbg wnd-free-bar-default  wnd-fe">
+    <div class="wnd-page l-page cs-gray ac-cyan">
+        <div id="wrapper" class="l-w cf t-43">
+            <header class="l-h cf">
+                <div class="sw section-wrapper cf">
+                    <div class="sw-c section-wrapper-content cf">
+                        <section class="s s-hn s-hn-default s-hn-bottom wnd-mt-classic wnd-na-c logo-classic cf sc-dt   wnd-w-default wnd-nh-m hn-no-bg  hm-claims  wnd-nav-sticky menu-bottom">
+                            <div class="s-w cf">
+                                <div class="s-o cf">
+                                    <div class="s-bg cf">
+                                        <div class="s-bg-l">
+                                        </div>
+                                        <div class="s-bg-l s-bg-lo"></div>
+                                    </div>
+                                    <div class="h-w h-f wnd-fixed cf">
+                                        <div class="n-l initial-state">
+                                            <div class="s-c">
+                                                <div class="b b-l logo logo-default logo-nb fira-sans b-ls-m wnd-logo-with-text">
+                                                    <div class="b-l-c logo-content">
+                                                        <div class="b-l-br logo-br"></div>
+                                                        <div class="b-l-text logo-text-wrapper">
+                                                            <div class="b-l-text-w logo-text">
+                                                                <span class="b-l-text-c logo-text-cell">溫軒</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-and-mobile">
+                                                    <div id="menu-mobile">
+                                                        <a href="#" id="menu-submit"><span></span>選單</a>
+                                                    </div>
+                                                </div>
+                                                <div id="menu-slider">
+                                                    <div id="menu-block">
+                                                        <nav id="menu" data-align="centered" class="centered" data-type="sliding" role="navigation">
+                                                            <div class="menu-font menu-wrapper">
+                                                                <a href="#" class="menu-close" rel="nofollow">
+                                                                    <span>Close Menu</span>
+                                                                </a>
+                                                                <ul class="level-1">
+                                                                    <li class="wnd-active   wnd-homepage">
+                                                                        <a class="menu-item" href="/home/"><span class="menu-item-text">畢業學校</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="menu-item" href="/%e6%8e%a8%e8%96%a6/"><span class="menu-item-text">b</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="menu-item" href="/%e9%97%9c%e6%96%bc%e6%88%91/"><span class="menu-item-text">c</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="menu-item" href="/%e8%81%af%e7%b5%a1%e8%b3%87%e8%a8%8a/"><span class="menu-item-text">d</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </header>
+            <main class="l-m cf" role="main">
+                <div class="sw section-wrapper cf">
+                    <div class="sw-c section-wrapper-content cf">
+                        <section class="s s-hm s-hm-claims cf sc-ml wnd-background-image  wnd-w-default wnd-s-higher wnd-h-high wnd-nh-m wnd-p-cc hn-no-bg hn-default hn-bottom">
+                            <div class="s-w cf">
+                                <div class="s-o cf">
+                                    <div class="s-bg">
+                                        <div class="s-bg-l wnd-background-image fx-none bgatt-scroll bgpos-center-center" style="background-image:url('https://d1di2lzuh97fh2.cloudfront.net/files/2w/2wp/450/2wp4rq.jpg?ph=8283c009c2')">
+                                        </div>
+                                        <div class="s-bg-l s-bg-lo"></div>
+                                    </div>
+                                    <div class="h-c s-c">
+                                        <div class="h-c-b">
+                                            <div class="h-c-b-i">
+                                                <h1>
+                                                    <div class="claim cf"><span class="sit b claim-color claim-wb roboto claim-58">
+	<span class="sit-w"><span class="sit-c"><strong>期末專題</strong></span></span>
+                                                        </span>
+                                                    </div>
+                                                </h1>
+                                                <h3>
+                                                    <div class="claim cf"><span class="sit b claim-color-alpha claim-wb fira-sans claim-26">
+	<span class="sit-w"><span class="sit-c">個人簡歷</span></span>
+                                                        </span>
+                                                    </div>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s s-basic cf sc-w   wnd-w-default wnd-s-higher wnd-h-auto">
+                            <div class="s-w cf">
+                                <div class="s-o cf">
+                                    <div class="s-bg cf">
+                                        <div class="s-bg-l">
+                                        </div>
+                                        <div class="s-bg-l s-bg-lo"></div>
+                                    </div>
+                                    <div class="s-c cf">
+                                        <div class="content ez cf wnd-no-cols">
+                                            <div class="ez-c">
+                                                <div class="b b-text cf">
+                                                    <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf">
+                                                        <h1 class="wnd-align-center">畢業學校</h1>
+                                                    </div>
+                                                </div>
+                                                <div class="mt mt-3 mt-03-column img-s-l default">
+                                                    <div>
+                                                        <div class="mt-column cf">
+                                                            <a href="https://sd.mlc.edu.tw/Home/Index.php" rel="nofollow" target="_blank">
+                                                                <div class="b-img-w">
+                                                                    <div class="b-img-c cf">
 
+                                                                        <div class="b-img-embed"></div>
+                                                                        <script>
+                                                                            checkAndChangeSvgColor('wnd_ImageBlock_953902214_img');
+                                                                        </script>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="b-img-t"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="b b-text cf">
+                                                        <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf">
+                                                            <h3>信德國小</h3>
+                                                            <p>授予我正規教育的起點</p>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div class="mt-column cf">
+                                                    <a href="https://shhs.mlc.edu.tw/Home/Index.php" rel="nofollow" target="_blank">
+                                                        <div class="b-img-w">
+                                                            <div class="b-img-c cf">
+
+                                                                <div class="b-img-embed">
+
+                                                                    <script>
+                                                                        checkAndChangeSvgColor('wnd_ImageBlock_893399943_img');
+                                                                    </script>
+                                                                </div>
+                                                            </div>
+                                                            <div class="b-img-t"></div>
+                                                        </div>
+                                                </div>
+                                                <div class="b b-text cf">
+                                                    <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf">
+                                                        <h3>興華高中(國中部)</h3>
+
+                                                        <p>結識各類朋友的地方</p>
+                                                    </div>
+                                                </div>
+                                                </a>
+                                            </div>
+                                            <div class="mt-column cf">
+                                                <a href="https://shhs.mlc.edu.tw/Home/Index.php" rel="nofollow" target="_blank">
+                                                    <div class="b-img-w">
+                                                        <div class="b-img-c cf">
+                                                            <div class="b-img-embed">
+                                                                <script>
+                                                                    checkAndChangeSvgColor('wnd_ImageBlock_114793052_img');
+                                                                </script>
+                                                            </div>
+                                                        </div>
+                                                        <div class="b-img-t"></div>
+                                                    </div>
+                                            </div>
+                                            <div class="b b-text cf">
+                                                <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf">
+                                                    <h3>興華高中</h3>
+                                                    <p>忙碌且充實的校園生活</p>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </section>
+    </div>
+    </div>
+    </main>
+    </div>
+    </div>
+    <script type="text/javascript" src="https://d1di2lzuh97fh2.cloudfront.net/files/30/30w/30wh0m.js?ph=8283c009c2"></script>
 </body>
 
 </html>
